@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <form action="index.html" method="post">
+            <h1>Tutoring Enquiry:</h1>
+            <fieldset>
+                <legend><span class="number">1</span> Enter some details about you:</legend>
+                <label for="title">Title:</label>
+                <select id="title">
+                    <option value="mr">Mr</option>
+                    <option value="mrs">Mrs</option>
+                    <option value="miss">Miss</option>
+                    <option value="ms">Ms</option>
+                    <option value="dr">Dr</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="enquirer_email">
+                <label for="tel">Contact telephone number:</label>
+                <input type="tel" id="tel" name="enquirer_tel">
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="enquirer_first_name">
+                <label for="surname">Last name:</label>
+                <input type="text" id="surname" name="enquirer_surname">
+            </fieldset>
+            <fieldset>
+                <legend><span class="number">1</span> Who will be tutored?</legend>
+                <label for="student-first-name">Student first name:</label>
+                <input type="text" id="student-first-name" name="student_first_name">
+                <label for="student-surname">Student last name:</label>
+                <input type="text" id="student-surname" name="student_surname">
+                <label for="dob">Student date of birth:</label>
+                <input type="date" id="dob" name="student_dob">
+                <label for="year">Current school year:</label>
+                <select id="year" name="student_year">
+                    <optgroup label="Sixth form">
+                        <option value="13">13 - Upper Sixth</option>
+                        <option value="12">12 - Lower Sixth</option>
+                    </optgroup>
+                    <optgroup label="GCSE">
+                        <option value="11">11</option>
+                        <option value="10">10</option>
+                    </optgroup>
+
+                    <optgroup label="Secondary School (KS3)">
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                    </optgroup>
+
+                    <optgroup label="Primary/Junior School (KS2)">
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                    </optgroup>
+                    <option>Other</option>
+                </select>
+            </fieldset>
+
+        <fieldset>
+            <legend><span class="number">2</span> When are you available to be tutored?</legend>
+            <label>Select availability</label>
+            <ul class="checkbox-grid">
+                <li><input type="checkbox" id="mon_morning" name="mon_morning" value="mon_morning" />
+                    <label for="mon_morning">Mon 9-12</label></li>
+                <li><input type="checkbox" id="mon_afternoon" name="mon_afternoon" value="mon_afternoon" />
+                    <label for="mon_afternoon">Mon 12-5</label></li>
+                <li><input type="checkbox" id="mon_eve" name="mon_eve" value="mon_eve" />
+                    <label for="mon_eve">Mon 5-7</label></li>
+                <li><input type="checkbox" id="tues_morning" name="tues_morning" value="tues_morning">
+                    <label for="tues_morning">Tues 9-12</label></li>
+                <li><input type="checkbox" id="tues_afternoon" name="tues_afternoon" value="tues_afternoon">
+                    <label for="tues_afternoon">Tues 12-5</label></li>
+                <li><input type="checkbox" id="tues_eve" name="tues_eve" value="tues_eve">
+                    <label for="tues_eve">Tues 5-7</label></li>
+                <li><input type="checkbox" id="weds_morning" name="weds_morning" value="weds_morning">
+                    <label for="weds_morning">Weds 9-12</label></li>
+                <li><input type="checkbox" id="weds_afternoon" name="weds_afternoon" value="weds_afternoon">
+                    <label for="weds_afternoon">Weds 12-5</label></li>
+                <li><input type="checkbox" id="weds_eve" name="weds_eve" value="weds_eve">
+                    <label for="weds_eve">Weds 5-7</label></li>
+                <li><input type="checkbox" id="thurs_morning" name="thurs_morning" value="thurs_morning" />
+                    <label for="thurs_morning">Thurs 9-12</label></li>
+                <li><input type="checkbox" id="thurs_afternoon" name="thurs_afternoon" value="thurs_afternoon" />
+                    <label for="thurs_afternoon">Thurs 12-5</label></li>
+                <li><input type="checkbox" id="thurs_eve" name="thurs_eve" value="thurs_eve" />
+                    <label for="thurs_eve">Thurs 5-7</label></li>
+                <li><input type="checkbox" id="fri_morning" name="fri_morning" value="fri_morning" />
+                    <label for="fri_morning">Fri 9-12</label></li>
+                <li><input type="checkbox" id="fri_afternoon" name="fri_afternoon" value="fri_afternoon" />
+                    <label for="fri_afternoon">Fri 12-5</label></li>
+                <li><input type="checkbox" id="fri_eve" name="fri_eve" value="fri_eve" />
+                    <label for="fri_eve">Fri 5-7</label></li>
+                <li><input type="checkbox" id="sat_morning" name="sat_morning" value="sat_morning" />
+                    <label for="sat_morning">Sat 9-12</label></li>
+                <li><input type="checkbox" id="sat_afternoon" name="sat_afternoon" value="sat_afternoon" />
+                    <label for="sat_afternoon">Sat 12-5</label></li>
+                <li><input type="checkbox" id="sat_eve" name="sat_eve" value="sat_eve" />
+                    <label for="sat_eve">Sat 5-7</label></li>
+                <li><input type="checkbox" id="sun_morning" name="sun_morning" value="sun_morning" />
+                    <label for="sun_morning">Sun 9-12</label></li>
+                <li><input type="checkbox" id="sun_afternoon" name="sun_afternoon" value="sun_afternoon" />
+                    <label for="sun_afternoon">Sun 12-5</label></li>
+                <li><input type="checkbox" id="sun_eve" name="sun_eve" value="sun_eve" />
+                    <label for="sun_eve">Sun 5-7</label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+
+            <label for="start-date">On what date would you like the sessions to start?</label>
+            <input type="date" id="start-date" name="tuition_start">
+
+            <label for="stop-date">On what date would you like the sessions to start?</label>
+            <input type="date" id="stop-date" name="tuition_stop">
+
+        </fieldset>
+
+
+        <fieldset>
+            <button type="submit">Send Enquiry</button>
+        </fieldset>
+
+        </form>
+
+
+
+
+
+
+
+
+
+      
+    </body>
+</html>
